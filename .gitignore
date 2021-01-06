@@ -11,6 +11,7 @@
 # testing
 /coverage
 /src/sample_data/images
+/src/sample_data/articles
 
 # production
 /build

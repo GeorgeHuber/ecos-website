@@ -1,0 +1,15 @@
+.home{
+    width:75%;
+    overflow: hidden;
+}
+
+.home .top{
+    background-color: coral;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home p{
+    color: white;
+}

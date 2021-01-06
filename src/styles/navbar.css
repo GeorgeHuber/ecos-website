@@ -7,17 +7,20 @@
     float:right;
     height: 100%;
 }
-.navbar-nav {
+
+.navbar .navbar-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: auto;
   }
-.navbar-logo{
-    height:80%;
-    width:80%;
+
+.navbar .navbar-logo{
+  width: 20vw;
+  height:20vw;
+  object-fit: cover;
 }
-.navbar-brand{
+.navbar .navbar-brand{
     display: block;
     padding: 16px 32px;
     font-family: Raleway;
@@ -26,7 +29,7 @@
     text-decoration: none;
     color: black;
 }
-li  a{
+.navbar li  a{
     font-family: Raleway;
     display: block;
     color: #000;
@@ -35,7 +38,7 @@ li  a{
   }
   
   
-li a:hover {
+  .navbar li a:hover {
     background-color: #555;
     color: white;
   }

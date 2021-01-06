@@ -12,14 +12,14 @@ import images from "../sample_data/images.js"
 
 export default class NavBar extends Component {
 
-    
-
     render(){
         return (
             <nav className="navbar">
                 <Link to="/" className="navbar-brand">
                     <div>
+                        
                         <img className="navbar-logo" alt="" src={images.logo}/>
+                        
                         <p>ECOS</p>
                     </div>    
                 </Link>
