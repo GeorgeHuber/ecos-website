@@ -2,6 +2,7 @@ import React from 'react'
 
 import article1 from "../sample_data/articles/article1.json"
 import article2 from "../sample_data/articles/article2.json"
+import article3 from "../sample_data/articles/article3.json"
 
 import "../styles/home.css"
 
@@ -12,10 +13,9 @@ export default class Home extends React.Component {
     super(props);
 
     this.state={
-      articles:[article1,article2]
+      articles:[article1,article2,article3]
     }
   }
-
 
   //TODO:: Replace static numbers import with urls in articles
   

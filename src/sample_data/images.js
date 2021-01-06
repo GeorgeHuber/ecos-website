@@ -1,4 +1,4 @@
-import _logo from "../sample_data/images/unsamples/4.jpg"
+import _logo from "../sample_data/images/logo.png"
 
 import _img1 from "../sample_data/images/unsamples/1.jpg"
 import _img2 from "../sample_data/images/unsamples/2.jpg"
@@ -10,6 +10,7 @@ import _img7 from "../sample_data/images/unsamples/7.jpg"
 import _img8 from "../sample_data/images/unsamples/8.jpg"
 import _img9 from "../sample_data/images/unsamples/9.jpg"
 import _img0 from "../sample_data/images/unsamples/0.jpg"
+import _img10 from "../sample_data/images/unsamples/10.jpg"
 
 const images = {
     logo: _logo,
@@ -23,7 +24,8 @@ const images = {
     _img7,
     _img8,
     _img9,
-    _img0
+    _img0,
+    _img10
     ] 
 }
 

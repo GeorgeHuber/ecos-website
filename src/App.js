@@ -15,9 +15,8 @@ function App() {
     <Router>
           <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Raleway"/>
-      <div className="container">
+          <div className="container">
         <Navbar/>
-          <br/>
       
           <Route path="/" exact component={Home}/>
           <Route path="/news" component={News}/>

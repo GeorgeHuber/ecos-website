@@ -1,6 +1,7 @@
 .home{
     width:75%;
     overflow: hidden;
+    margin-top: 0px;
 }
 
 .home .top{
@@ -8,8 +9,49 @@
     flex-direction: row;
     display: flex;
     justify-content: space-around;
+    
 }
 
-.home p{
+.home .top p{
     color: white;
+}
+
+
+.carousel{
+    float:right;
+    border-style: solid;
+    width: 66%;
+    height: 66vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+}
+
+.carousel .preview-img{
+    height:66vh;
+    object-fit:cover;
+    
+}
+
+.carousel .article-description {
+    position: absolute;
+}
+
+.carousel .arrow{
+    position: absolute;
+    top:25vh;
+    font-size: 4em;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+
+}
+.carousel .left{
+    left: 27vw;
+    
+}
+.carousel .right{
+    left: 71vw;
 }
