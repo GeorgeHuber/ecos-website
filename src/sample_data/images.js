@@ -15,6 +15,7 @@ import _img10 from "../sample_data/images/unsamples/10.jpg"
 const images = {
     logo: _logo,
     unsamples: [
+        _img0,
     _img1,
     _img2,
     _img3,
@@ -24,9 +25,21 @@ const images = {
     _img7,
     _img8,
     _img9,
-    _img0,
     _img10
-    ] 
+    ],
+    unsample_links:[
+        "../sample_data/images/unsamples/0.jpg",
+        "../sample_data/images/unsamples/1.jpg",
+        "../sample_data/images/unsamples/2.jpg",
+        "../sample_data/images/unsamples/3.jpg",
+        "../sample_data/images/unsamples/4.jpg",
+        "../sample_data/images/unsamples/5.jpg",
+        "../sample_data/images/unsamples/6.jpg",
+        "../sample_data/images/unsamples/7.jpg",
+        "../sample_data/images/unsamples/8.jpg",
+        "../sample_data/images/unsamples/9.jpg",
+        "../sample_data/images/unsamples/10.jpg"
+    ]
 }
 
 export default images;

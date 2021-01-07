@@ -1,7 +1,11 @@
 .home{
     width:75%;
+    height: 150vh;
     overflow: hidden;
     margin-top: 0px;
+    background-color: #abe9cd;
+    background-image: linear-gradient(135deg, #abe9cd 0%, #3eadcf 74%);
+
 }
 
 .home .top{
@@ -20,26 +24,43 @@
 .carousel{
     float:right;
     border-style: solid;
-    width: 66%;
+    border-color: white;
+    margin:2%;
+    width: 64%;
     height: 66vh;
     overflow: hidden;
     flex-direction: column;
     display: flex;
+    border-radius: 2em;
+    position:relative;
 }
 
 .carousel .preview-img{
-    height:66vh;
-    object-fit:cover;
-    
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 50vw;
+    height: 66vh;
+    position:relative;
 }
 
+.carousel .info-box{
+    max-width: 20vw;
+    max-height: 20vh;
+    position: absolute;
+    bottom:8vh;
+    left:4vw;
+    padding: 0vw 2vw;
+    background-color: white;
+    overflow: hidden;
+}
 .carousel .article-description {
     position: absolute;
 }
 
 .carousel .arrow{
     position: absolute;
-    top:25vh;
+    top:20vh;
     font-size: 4em;
     color: black;
     cursor: pointer;
@@ -49,9 +70,12 @@
 
 }
 .carousel .left{
-    left: 27vw;
+    left: 2vw;
     
 }
 .carousel .right{
-    left: 71vw;
+    right: 2vw;
+}
+.carousel .info-texts{
+    margin:1vh
 }
