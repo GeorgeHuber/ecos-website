@@ -7,13 +7,16 @@ import article3 from "../sample_data/articles/article3.json"
 import "../styles/home.css"
 
 import Carousel from "../components/carousel.component"
+import ActionsBox from "../components/actionsBox.component"
+
 
 export default class Home extends React.Component {
   constructor(props){
     super(props);
 
     this.state={
-      articles:[article1,article2,article3]
+      articles:[article1,article2,article3],
+      actions:[article1,article2,article3,article1]
     }
   }
 
@@ -23,11 +26,7 @@ export default class Home extends React.Component {
   render(){
     return(
       <div className="home">
-        <div className="top">
-        <p>You are on the home page!</p>
-        <p>Created by {article1.Author}</p>
-        </div>
-        
+        <ActionsBox articles={this.state.actions}/>
         <Carousel articles={this.state.articles}/>
       </div>
     )

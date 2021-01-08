@@ -1,7 +1,7 @@
 .navbar{
     width: 25%;
     background-color:white;
-    background-image: linear-gradient(135deg, #f5f7fa  0%, #c3cfe2 100%);
+    /*background-image: linear-gradient(135deg, #f5f7fa  0%, #c3cfe2 100%);*/
     position: fixed;
     top: 0;
     right: 0;
@@ -17,16 +17,49 @@
   }
 
 .navbar .navbar-logo{
-  width: 20vw;
-  height:20vw;
+  width: 18vw;
+  height:18vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
+.navbar .title{
+  margin-bottom: 4vh;
+  margin-top: .5vh;
+}
+.navbar .social-container{
+  border-style: solid;
+  border-radius: 1rem;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}
+.navbar .instagram{
+  width: 4vw;
+  margin: .5vw;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.navbar .instagram:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
 .navbar .navbar-brand{
     display: block;
-    padding: 16px 32px;
+    padding: 2vh 3vw;
     font-family: Raleway;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 4rem;
     text-decoration: none;
     color: black;
 }
@@ -34,12 +67,13 @@
     font-family: Raleway;
     display: block;
     color: #000;
-    padding: 16px 32px;
+    padding: 4vh 3vw;
     text-decoration: none;
+    font-size: 2rem;
   }
   
   
-  .navbar li a:hover {
+.navbar li a:hover {
     background-color: #555;
     color: white;
   }

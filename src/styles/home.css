@@ -3,8 +3,8 @@
     height: 150vh;
     overflow: hidden;
     margin-top: 0px;
-    background-color: #abe9cd;
-    background-image: linear-gradient(135deg, #abe9cd 0%, #3eadcf 74%);
+    background-color: #13547a;
+    background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 75%);
 
 }
 
@@ -45,6 +45,10 @@
 }
 
 .carousel .info-box{
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     max-width: 20vw;
     max-height: 20vh;
     position: absolute;
@@ -53,6 +57,9 @@
     padding: 0vw 2vw;
     background-color: white;
     overflow: hidden;
+}
+.carousel .info-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .carousel .article-description {
     position: absolute;
@@ -67,15 +74,85 @@
     text-decoration: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    
 
 }
+.carousel .arrow:hover{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.0rem 0.5rem 0.1rem 0.5rem;
+}
+
 .carousel .left{
-    left: 2vw;
-    
+    left: 2vw;   
 }
 .carousel .right{
     right: 2vw;
 }
 .carousel .info-texts{
     margin:1vh
+}
+
+.carousel h3{
+    font-size: 1.5rem;
+}
+.carousel h5{
+    font-size: .8rem;
+}
+.carousel p{
+    font-size: 1rem;
+}
+
+.actions-box{
+    background-color: white;
+    float:left;
+    border-style: solid;
+    border-color: white;
+    margin:2% 0px 2% 2%;
+    width: 28%;
+    height: 66vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    border-radius: 2rem;
+    position:relative;
+    align-items: center;
+    
+}
+
+.actions-box .info-box{
+    flex-direction: row;
+    display: flex;
+    margin-top: 3vh;
+    border-style: solid;
+    border-width: 0.1rem;
+    width: 32vh;
+    height:12vh;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.actions-box .info-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.actions-box .preview-img{
+    width:9vw;
+    height:9vh ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 0.5rem;
+    align-self: center;
+    margin-left:.5vw ;
+    margin-right:.5vw ;
+}
+
+.actions-box .info-texts{
+    align-self: center;
+    max-width: 7vw;
+    max-height: 12vh;
+    overflow: hidden;
+    font-size: 1rem;
 }
