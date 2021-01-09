@@ -11,20 +11,21 @@ export default class TeamBox extends React.Component{
 
     renderMember(m){
         return (
-        <div key={Math.random()} >
-            <div className="info-box">
-                
-                <h4 className="info-texts">{m.Name}</h4>
-            </div>
+        <div className="member-group" key={Math.random()} >
+            <div className="info-box" style={{backgroundImage:"url("+images.morgan+")"}}/>    
+            <h4 className="info-texts">{m.Name}</h4>
+            <h5 className="info-texts">{m.Job}</h5>
         </div>
             )
     }
 
-
+    
     render(){
+        const members=this.props.members.slice(0,4);
+        
         return(
             <div className="team-box">
-                {this.props.members.map((a)=>this.renderMember(a))}
+                {members.map((a)=>this.renderMember(a))}
             </div>
         )
     }

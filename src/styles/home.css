@@ -168,12 +168,44 @@
     width: 46vw;
     height: 31vh;
     overflow: hidden;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     border-radius: 2rem;
     position:relative;
     align-items: center;
+
     
+    
+}
+
+.member-group {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0vw 1vh 0vw;
+    height:80%;
+    width:25%;
+}
+.team-box .info-box{
+    /*does image of person*/
+    justify-self: flex-start;
+    width: 6vw;
+    height: 6vw;
+    border-style: solid;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.member-group h4{
+    font-size:1.25rem ;
+    margin: 1.5vh 0.5vw 0px 0.5vw
+}
+.team-box  h5{
+    font-size:.75rem ;
+    
+    margin: 1vh 0.5vw 0px 0.5vw
 }
 
 .statistics-box{
@@ -184,7 +216,7 @@
     margin:1vh 1.5vw 2vh 0vw;
     width: 21.5vw;
     height: 66vh;
-    overflow: hidden;
+    overflow:hidden;
     flex-direction: column;
     display: flex;
     border-radius: 2rem;
@@ -208,4 +240,18 @@
     position:relative;
     align-items: center;
     
+}
+.block-quote .tree{
+    position: absolute;
+    width: 18vw;
+    left:2vw;
+    bottom: -2vh;
+}
+.block-quote .quote{
+    margin-left: 18vw;
+    font-size: 3rem;
+    text-align: center;
+}
+.block-quote .author{
+    margin-left: 24vw;
 }
