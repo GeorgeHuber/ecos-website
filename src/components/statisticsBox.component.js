@@ -2,23 +2,24 @@ import React from "react"
 
 import images from "../sample_data/images"
 
-export default class ActionsBox extends React.Component{
+export default class StatisticsBox extends React.Component{
     constructor(props){
         super(props);
         
         this.state={
+            statistics:props.statistics,
         }
 
         this.timer=null;
     }
 //article.image is temporary and should be replaced in future version
 
-    renderArticle(article){
+    renderStatistic(stat){
         return (
-        <div key={article.Id} >
+        <div key={stat.Id} >
             <div className="info-box">
-                <div className="preview-img" style={{backgroundImage:`url(${images.unsamples[article.Main_Image]})`}}/>
-                <h4 className="info-texts">{article.Title}</h4>
+                
+                <h4 className="info-texts">{stat.Bold_Title}</h4>
             </div>
         </div>
             )
@@ -27,8 +28,8 @@ export default class ActionsBox extends React.Component{
 
     render(){
         return(
-            <div className="actions-box">
-                {this.props.articles.map((a)=>this.renderArticle(a))}
+            <div className="statistics-box">
+                {this.state.statistics.map((a)=>this.renderStatistic(a))}
             </div>
         )
     }

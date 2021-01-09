@@ -5,7 +5,7 @@ import images from "../sample_data/images.js";
 
 import instagram_logo from "../assets/instagram.png";
 import facebook_logo from "../assets/facebook.png";
-
+import twitter_logo from "../assets/twitter.png"
 
 
 
@@ -23,6 +23,7 @@ export default class NavBar extends Component {
                         <div className="social-container">
                             <img className="instagram" src={instagram_logo} onClick={()=>window.open("https://www.instagram.com/joebiden/")}/>
                             <img className="instagram" src={facebook_logo} onClick={()=>window.open("https://www.instagram.com/joebiden/")}/>
+                            <img className="instagram" src={twitter_logo} onClick={()=>window.open("https://www.instagram.com/joebiden/")}/>
                         </div>
                     </div>    
                 </div>

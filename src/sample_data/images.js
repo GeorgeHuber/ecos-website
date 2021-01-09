@@ -12,6 +12,8 @@ import _img9 from "../sample_data/images/unsamples/9.jpg"
 import _img0 from "../sample_data/images/unsamples/0.jpg"
 import _img10 from "../sample_data/images/unsamples/10.jpg"
 
+import _morgan from "../sample_data/images/morgan.jpg"
+
 const images = {
     logo: _logo,
     unsamples: [
@@ -27,6 +29,7 @@ const images = {
     _img9,
     _img10
     ],
+    morgan:_morgan,
     unsample_links:[
         "../sample_data/images/unsamples/0.jpg",
         "../sample_data/images/unsamples/1.jpg",

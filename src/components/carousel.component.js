@@ -7,7 +7,6 @@ export default class Carousel extends React.Component{
         super(props);
         
         this.state={
-            articles:props.articles,
             currentArticle:0
         }
 
@@ -32,7 +31,7 @@ export default class Carousel extends React.Component{
     onBackClick(){
         if(this.state.currentArticle===0){
             this.setState({
-                currentArticle:this.state.articles.length-1
+                currentArticle:this.props.articles.length-1
             });
         } else {
             this.setState({
@@ -43,7 +42,7 @@ export default class Carousel extends React.Component{
 
     onForwardClick(){
         this.setState({
-            currentArticle:(this.state.currentArticle+1)%this.state.articles.length
+            currentArticle:(this.state.currentArticle+1)%this.props.articles.length
         })
     }
 
@@ -62,11 +61,9 @@ export default class Carousel extends React.Component{
     render(){
         return(
             <div className="carousel">
-                {this.renderArticle(this.state.articles[this.state.currentArticle])}
+                {this.renderArticle(this.props.articles[this.state.currentArticle])}
                 <p className="left arrow" onClick={()=>this.onBackClick()}>&#10094;</p>
-                <p className="right arrow" onClick={()=>this.onForwardClick()}>&#10095;</p>
-                
-                
+                <p className="right arrow" onClick={()=>this.onForwardClick()}>&#10095;</p> 
             </div>
         )
     }

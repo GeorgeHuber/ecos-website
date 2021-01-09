@@ -1,11 +1,11 @@
 .home{
     margin: 0px;
     width:73vw;
-    height: 150vh;
+    height: 200vh;
     overflow: hidden;
     margin-top: 0px;
     background-color: #13547a;
-    background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 75%);
+    background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);
 
 }
 
@@ -157,4 +157,55 @@
     overflow: hidden;
     font-size: 1.2rem;
     font-weight: 800;
+}
+
+.team-box{
+    background-color: white;
+    float:left;
+    border-style: solid;
+    border-color: white;
+    margin:1vh 0px 2vh 1.5vw;
+    width: 46vw;
+    height: 31vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    border-radius: 2rem;
+    position:relative;
+    align-items: center;
+    
+}
+
+.statistics-box{
+    background-color: white;
+    float:right;
+    border-style: solid;
+    border-color: white;
+    margin:1vh 1.5vw 2vh 0vw;
+    width: 21.5vw;
+    height: 66vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    border-radius: 2rem;
+    position:relative;
+    align-items: center;
+    
+}
+
+.block-quote{
+    background-color: white;
+    float:left;
+    border-style: solid;
+    border-color: white;
+    margin:1vh 0px 2vh 1.5vw;
+    width: 46vw;
+    height: 31vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    border-radius: 2rem;
+    position:relative;
+    align-items: center;
+    
 }

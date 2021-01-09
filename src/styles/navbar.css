@@ -38,9 +38,10 @@
   align-items: center;
   flex-direction: row;
   display: flex;
+  justify-content: space-around;
 }
 .navbar .instagram{
-  width: 4vw;
+  width: 3vw;
   margin: .5vw;
   border-radius: 1rem;
   cursor: pointer;
