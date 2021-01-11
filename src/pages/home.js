@@ -19,6 +19,7 @@ import StatisticsBox from "../components/statisticsBox.component"
 import TeamBox from "../components/teamBox.component"
 import BlockQuote from "../components/blockQuote.component"
 
+
 export default class Home extends React.Component {
   constructor(props){
     super(props);

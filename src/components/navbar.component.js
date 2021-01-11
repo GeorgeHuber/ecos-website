@@ -15,7 +15,7 @@ export default class NavBar extends Component {
     constructor(props){
         super(props);
 
-        this.state={isOpen:true};
+        this.state={isOpen:false};
     }
     render(){
         return (
@@ -43,13 +43,13 @@ export default class NavBar extends Component {
                 </div>
                 <div className="collapse navbar-collapse">
                 <ul className="navbar-nav">
-                    <li onClick={()=>this.setState({isOpen:!this.state.isOpen})} className="navbar-item">
+                    <li onClick={()=>this.setState({isOpen:false})} className="navbar-item">
                         <Link to="/" className="nav-link">Home</Link>
                     </li>
-                    <li onClick={()=>this.setState({isOpen:!this.state.isOpen})} className="navbar-item">
+                    <li onClick={()=>this.setState({isOpen:false})} className="navbar-item">
                         <Link to="/news" className="nav-link">News</Link>
                     </li>
-                    <li onClick={()=>this.setState({isOpen:!this.state.isOpen})} className="navbar-item">
+                    <li onClick={()=>this.setState({isOpen:false})} className="navbar-item">
                         <Link to="/about" className="nav-link">About</Link>
                     </li>
                     

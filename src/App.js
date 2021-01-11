@@ -9,6 +9,7 @@ import Home from "./pages/home";
 import GetInvolved from "./pages/get-involved";
 import Statistics from './pages/statistics';
 
+import Footer from "./components/footer.component"
 function App() {
   return (
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about" component={About}/>
           <Route path="/statistics" component={Statistics}/>
         </div>
+        <Footer/>
     </Router>
   );
 }

@@ -15,12 +15,11 @@ export default class ActionsBox extends React.Component{
 
     renderArticle(article){
         return (
-        <div key={article.Id} style={{height:"100%",width:"100%",justifyItems:"space-around"}}>
-            <div className="info-box">
+            <div key={article.Id} className="info-box">
                 <div className="preview-img" style={{backgroundImage:`url(${images.unsamples[article.Main_Image]})`}}/>
                 <h4 className="info-texts">{article.Title}</h4>
             </div>
-        </div>
+        
             )
     }
 
@@ -29,7 +28,9 @@ export default class ActionsBox extends React.Component{
         return(
             <div className="actions-box">
                 <h1>Recent Action</h1>
+                <div className="actions-box-mobile">
                 {this.props.articles.map((a)=>this.renderArticle(a))}
+            </div>
             </div>
         )
     }

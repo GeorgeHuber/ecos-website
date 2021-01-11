@@ -1,0 +1,15 @@
+.footer{
+    height:5vh;
+    width:73vw;
+    background-color: white;
+    justify-content: space-around;
+    margin-bottom: -5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .footer{
+        width:100vw;
+    }
+}
