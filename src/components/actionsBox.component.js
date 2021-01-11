@@ -15,7 +15,7 @@ export default class ActionsBox extends React.Component{
 
     renderArticle(article){
         return (
-        <div key={article.Id} >
+        <div key={article.Id} style={{height:"100%",width:"100%",justifyItems:"space-around"}}>
             <div className="info-box">
                 <div className="preview-img" style={{backgroundImage:`url(${images.unsamples[article.Main_Image]})`}}/>
                 <h4 className="info-texts">{article.Title}</h4>
@@ -28,6 +28,7 @@ export default class ActionsBox extends React.Component{
     render(){
         return(
             <div className="actions-box">
+                <h1>Recent Action</h1>
                 {this.props.articles.map((a)=>this.renderArticle(a))}
             </div>
         )

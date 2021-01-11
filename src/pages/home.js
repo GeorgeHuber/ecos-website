@@ -38,8 +38,9 @@ export default class Home extends React.Component {
   render(){
     return(
       <div className="home">
-        <ActionsBox articles={this.state.actions}/>
+        
         <Carousel articles={this.state.articles}/>
+        <ActionsBox articles={this.state.actions}/>
         <TeamBox members={this.state.members}/>
         <StatisticsBox statistics={this.state.statistics}/>
         <BlockQuote quote={this.state.quote}/>

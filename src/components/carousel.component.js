@@ -16,7 +16,7 @@ export default class Carousel extends React.Component{
 
     renderArticle(article){
         return (
-        <div key={article.Id} >
+        <div key={article.Id} style={{height:"100%",width:"100%"}}>
             <div className="preview-img" style={{backgroundImage:`url(${images.unsamples[article.Main_Image]})`}}>
                 <div onClick={()=>{alert("add link to article page")}} className="info-box">
                     <h3 className="info-texts">{article.Title}</h3>
