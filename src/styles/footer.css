@@ -1,15 +1,21 @@
 .footer{
-    height:5vh;
-    width:73vw;
+    height:8vh;
+    width:75vw;
+    
     background-color: white;
     justify-content: space-around;
-    margin-bottom: -5vh;
+    margin-bottom: -8vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-top-style: solid;
+    border-top-width:.1rem ;
 }
-@media only screen and (max-width: 768px) {
+.footer h2{
+    color:black;
+}
+@media only screen and (max-width: 900px) {
     .footer{
-        width:100vw;
+        width:100%;
     }
 }

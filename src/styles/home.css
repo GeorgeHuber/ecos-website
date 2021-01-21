@@ -1,12 +1,11 @@
 .home{
     margin: 0px;
-    width:73vw;
+    width:75%;
     height: auto;
     overflow: hidden;
     margin-top: 0px;
     background-color: #13547a;
     background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);
-
 }
 
 .home .top{
@@ -68,19 +67,23 @@
 .carousel .arrow{
     position: absolute;
     top:20vh;
-    font-size: 4em;
+    font-size: 4rem;
     color: black;
     cursor: pointer;
     text-decoration: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    text-align: center;
+    align-self: center;
+    
     
 
 }
 .carousel .arrow:hover{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
-    padding: 0.0rem 0.5rem 0.1rem 0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    
 }
 
 .carousel .left{
@@ -112,7 +115,7 @@
     border-style: solid;
     border-color: white;
     margin:2vh 0px 2vh 1.5vw;
-    width: 21.5vw;
+    width: 23.5vw;
     height: 66vh;
     overflow: hidden;
     flex-direction: column;
@@ -149,7 +152,7 @@
     
 }
 .actions-box .preview-img{
-    width:54%;
+    width:40%;
     height:90% ;
     background-repeat: no-repeat;
     background-size:cover;
@@ -221,12 +224,12 @@
 }
 
 .statistics-box{
-    background-color: white;
+    
     float:right;
     border-style: solid;
     border-color: white;
     margin:1vh 1.5vw 2vh 0vw;
-    width: 21.5vw;
+    width: 23.5vw;
     height: 66vh;
     overflow:hidden;
     flex-direction: column;
@@ -234,7 +237,31 @@
     border-radius: 2rem;
     position:relative;
     align-items: center;
+    background-size: cover;
     
+}
+
+.statistics-box .info-box{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height:14%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1% 2% 1% 2%;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.statistics-box .info-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.statistics-box h2{
+    font-size: 2rem;
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 10%;
 }
 
 .block-quote{
@@ -260,7 +287,8 @@
     bottom: -10%;
 }
 .block-quote .quote{
-    margin-left: 38%;
+    margin-left: 36%;
+    margin-right: 1%;
     max-height: 60%;
     font-size: 3rem;
     text-align: center;
@@ -270,7 +298,7 @@
     max-width: 40%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .home{
         width: 100%;
         display: flex;

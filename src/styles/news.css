@@ -1,0 +1,16 @@
+.news{
+    margin: 0px;
+    width:75%;
+    height: 200vh;
+    overflow: hidden;
+    margin-top: 0px;
+    background-color: #13547a;
+    background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);
+}
+
+@media only screen and (max-width: 900px) {
+    .news{
+        width: 100%;
+        
+    }
+}

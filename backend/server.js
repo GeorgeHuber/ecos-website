@@ -18,7 +18,7 @@ connection.once('open', ()=>{
     console.log("MongoDB database connection established successfully");
 })
 
-const excercisesRouter = require('./routes/articles');
+const articleRouter = require('./routes/articles');
 
 
 app.use('/articles',articleRouter);

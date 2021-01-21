@@ -26,7 +26,7 @@ export default class ActionsBox extends React.Component{
 
     render(){
         return(
-            <div className="actions-box">
+            <div className="actions-box" >
                 <h1>Recent Action</h1>
                 <div className="actions-box-mobile">
                 {this.props.articles.map((a)=>this.renderArticle(a))}

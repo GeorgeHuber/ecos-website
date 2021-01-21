@@ -1,4 +1,6 @@
 import React from 'react'
+import axios from 'axios'
+
 
 import article1 from "../sample_data/articles/article1.json"
 import article2 from "../sample_data/articles/article2.json"
@@ -19,6 +21,10 @@ import StatisticsBox from "../components/statisticsBox.component"
 import TeamBox from "../components/teamBox.component"
 import BlockQuote from "../components/blockQuote.component"
 
+require('dotenv').config()
+
+const server="http://localhost:4000/"
+
 
 export default class Home extends React.Component {
   constructor(props){
@@ -34,7 +40,18 @@ export default class Home extends React.Component {
   }
 
   //TODO:: Replace static numbers import with urls in articles
-  
+  componentDidMount(){
+
+    
+
+    
+    console.log(server)
+    axios.get(""+server+"articles/").then((res)=>{
+        this.setState({articles:res.data});
+        console.log(res.data);
+    })
+    .catch(err=>console.log(err))
+}
 
   render(){
     return(
@@ -42,9 +59,9 @@ export default class Home extends React.Component {
         
         <Carousel articles={this.state.articles}/>
         <ActionsBox articles={this.state.actions}/>
-        <TeamBox members={this.state.members}/>
-        <StatisticsBox statistics={this.state.statistics}/>
         <BlockQuote quote={this.state.quote}/>
+        <StatisticsBox statistics={this.state.statistics}/>
+        <TeamBox members={this.state.members}/>
       </div>
     )
   }
