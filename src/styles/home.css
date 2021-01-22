@@ -6,6 +6,9 @@
     margin-top: 0px;
     background-color: #13547a;
     background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
 .home .top{
@@ -20,18 +23,58 @@
     color: white;
 }
 
+.home .block-background{
+    width: 75vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+
+.home .one.block-background {
+    background-color: #4F759B;
+}
+.home .two.block-background {
+    background-color: #A2FAA3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.home .three.block-background {
+    background-color: #92C9B1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.home .four.block-background {
+    background-color: #5D5179;
+}
+.home .five.block-background {
+    background-color: #BA7BA1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
 .carousel{
     float:right;
     border-style: solid;
     border-color: white;
-    margin:2vh 1.5vw 2vh 0vw;
-    width: 46vw;
-    height: 66vh;
+    margin:0vh 0vw 0vh 0vw;
+    width: 68vw;
+    height: 78vh;
     overflow: hidden;
     flex-direction: column;
     display: flex;
     border-radius: 2em;
     position:relative;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .carousel .preview-img{
@@ -114,9 +157,9 @@
     float:left;
     border-style: solid;
     border-color: white;
-    margin:2vh 0px 2vh 1vw;
+    margin:0vh 0px 0vh 2vw;
     width: 23.5vw;
-    height: 66vh;
+    height: 60vh;
     overflow: hidden;
     flex-direction: column;
     display: flex;
@@ -176,9 +219,9 @@
     float:left;
     border-style: solid;
     border-color: white;
-    margin:1vh 0px 2vh 1vw;
-    width: 46vw;
-    height: 31vh;
+    margin:0vh 2vh 0vh 0vw;
+    width: 44vw;
+    height: 60vh;
     overflow: hidden;
     flex-direction: row;
     display: flex;
@@ -228,9 +271,9 @@
     float:right;
     border-style: solid;
     border-color: white;
-    margin:1vh 1.5vw 2vh 0vw;
+    margin:0vh 2vw 0vh 2vw;
     width: 23.5vw;
-    height: 66vh;
+    height: 60vh;
     overflow:hidden;
     flex-direction: column;
     display: flex;
@@ -269,9 +312,9 @@
     float:left;
     border-style: solid;
     border-color: white;
-    margin:1vh 0px 2vh 1vw;
-    width: 46vw;
-    height: 31vh;
+    margin:0vh 2vw 0vh 0vw;
+    width: 42vw;
+    height: 60vh;
     overflow: hidden;
     flex-direction: column;
     display: flex;
@@ -282,7 +325,7 @@
 }
 .block-quote .tree{
     position: absolute;
-    width: 38%;
+    width: 60%;
     left:3%;
     bottom: -10%;
 }
@@ -309,32 +352,46 @@
         width: 96%;
         margin-left: 0%;
         margin-right: 0%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .actions-box{
         width: 96%;
+        height: 70vh;
         margin-left: 0%;
         margin-right: 0%;
+        margin-bottom: 5vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .team-box{
         width: 96%;
+        height:30vh;
         margin-left: 0%;
         margin-right: 0%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .team-box .info-box{
         width:12vw;
         height:12vw;
         min-width:12vw;
         min-height:12vw;
+        
+    }
+    .team-box .member-group{
+       
+        
     }
     .statistics-box{
         width: 96%;
         margin-left: 0%;
         margin-right: 0%;
+        margin-bottom: 5vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .block-quote{
         width: 96%;
         margin-left: 0%;
         margin-right: 0%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .block-quote .quote{
         margin-left: 4vh;
@@ -356,6 +413,19 @@
         text-decoration: none;
         -webkit-user-select: none;
         -moz-user-select: none;
+    }
+    .home #mobile_bb.block-background{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        width: 100%;
+        height: 60vh;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .home #mobile_bb.block-background.two_elements{
+        height: auto;
     }
     
 }

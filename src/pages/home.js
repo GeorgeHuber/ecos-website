@@ -64,12 +64,22 @@ componentWillUnmount(){
     
     return(
       <div className="home">
-        
+        <div className="block-background one" id="mobile_bb">
         <Carousel articles={this.state.articles}/>
+        </div>
+        <div className="block-background two two_elements" id="mobile_bb">
         <ActionsBox articles={this.state.actions}/>
         <BlockQuote quote={this.state.quote}/>
+        </div>
+        <div className="block-background three two_elements" id="mobile_bb">
+          <StatisticsBox statistics={this.state.statistics}/>
+          <TeamBox members={this.state.members}/>
+        </div>
+
+        <div className="block-background five two_elements" id="mobile_bb">
         <StatisticsBox statistics={this.state.statistics}/>
         <TeamBox members={this.state.members}/>
+        </div>
       </div>
     )
   }
