@@ -10,6 +10,7 @@ import GetInvolved from "./pages/get-involved";
 import Statistics from './pages/statistics';
 
 import Footer from "./components/footer.component"
+import Article from './pages/article';
 function App() {
   return (
 
@@ -21,6 +22,7 @@ function App() {
       
           <Route path="/" exact component={Home}/>
           <Route path="/news" component={News}/>
+          <Route path="/articles/:id" component={Article}/>
           <Route path="/about" component={About}/>
           <Route path="/statistics" component={Statistics}/>
         </div>

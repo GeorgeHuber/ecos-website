@@ -39,11 +39,14 @@ export default class Home extends React.Component {
     }
   }
 
-  //TODO:: Replace static numbers import with urls in articles
+  
+  
+
+
   componentDidMount(){
 
     
-
+    
     
     console.log(server)
     axios.get(""+server+"articles/").then((res)=>{
@@ -53,7 +56,12 @@ export default class Home extends React.Component {
     .catch(err=>console.log(err))
 }
 
+componentWillUnmount(){
+  window.scrollTo(0, 0);
+}
+
   render(){
+    
     return(
       <div className="home">
         

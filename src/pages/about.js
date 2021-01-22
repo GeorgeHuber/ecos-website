@@ -4,6 +4,11 @@ import "../styles/about.css"
 
 
 export default class About extends React.Component {
+
+    componentWillUnmount(){
+        window.scrollTo(0, 0);
+      }
+
     render(){
         return (
             <div className="about">

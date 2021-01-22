@@ -9,4 +9,11 @@ router.route('/').get((req, res) => {
   });
 
 
+router.route('/get').get((req, res) => {
+  const id=req.query.id;
+    Article.findById(id)
+      .then(article => res.json(article))
+      .catch(err => res.status(400).json('Error: ' + err));
+  });
+
   module.exports=router
