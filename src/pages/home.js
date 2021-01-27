@@ -21,9 +21,7 @@ import StatisticsBox from "../components/statisticsBox.component"
 import TeamBox from "../components/teamBox.component"
 import BlockQuote from "../components/blockQuote.component"
 
-require('dotenv').config()
-
-const server = "http://localhost:4000/"
+import server from "../config.js"
 
 
 export default class Home extends React.Component {
@@ -44,7 +42,7 @@ export default class Home extends React.Component {
 
 
   componentDidMount() {
-    console.log(server)
+    
     axios.get("" + server + "articles/").then((res) => {
       this.setState({ articles: res.data });
       console.log(res.data);

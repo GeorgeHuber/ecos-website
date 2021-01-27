@@ -1,6 +1,8 @@
 import React from "react"
 import axios from "axios"
 
+import server from "../config.js"
+
 export default class Article extends React.Component{
     constructor(props){
         super(props)
@@ -11,7 +13,7 @@ export default class Article extends React.Component{
 
     componentDidMount(){
         let id = this.props.match.params.id;
-        axios.get("http://localhost:4000/articles/get",{params:{id:id}}).then((res)=>{
+        axios.get(server+"/articles/get",{params:{id:id}}).then((res)=>{
             this.setState({article:res.data});
             console.log(res.data);
         })
