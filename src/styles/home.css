@@ -5,20 +5,11 @@
     overflow: hidden;
     margin-top: 0px;
     background-color: #13547a;
-<<<<<<< Updated upstream
-    background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);
-<<<<<<< Updated upstream
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-=======
-=======
     background: linear-gradient(to right, #70e1f5, #ffd194);
     flex-direction: column;
     display: flex;
     align-items: center;
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+
 }
 
 .home .top{
@@ -33,11 +24,7 @@
     color: white;
 }
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
+
 .home .block-background{
     width: 75vw;
     height: 100vh;
@@ -49,7 +36,7 @@
     
 }
 
-<<<<<<< Updated upstream
+
 .home .one.block-background {
     background-color: #4F759B;
 }
@@ -61,7 +48,7 @@
 }
 .home .three.block-background {
     background-color: #92C9B1;
-=======
+}
 .home .one {
     background-color: #E1EDED;
 }
@@ -78,12 +65,12 @@
 }
 .home .three {
     background-color: #E1EDED;
->>>>>>> Stashed changes
+
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-<<<<<<< Updated upstream
+
 .home .four.block-background {
     background-color: #5D5179;
 }
@@ -92,7 +79,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-=======
+}
 
 .home .five {
     background-color: #CDD4D0;
@@ -105,17 +92,13 @@
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
->>>>>>> Stashed changes
+
 }
 
 
 
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 .carousel{
     float:right;
     border-style: solid;
@@ -128,15 +111,9 @@
     display: flex;
     border-radius: 2em;
     position:relative;
-<<<<<<< Updated upstream
-    background-color: rgba(255, 255, 255, 0.2);
-=======
-<<<<<<< Updated upstream
-=======
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+
 }
 
 .carousel .preview-img{
@@ -282,21 +259,10 @@
     float:left;
     border-style: solid;
     border-color: white;
-<<<<<<< Updated upstream
-    margin:0vh 2vh 0vh 0vw;
-    width: 44vw;
-    height: 60vh;
-=======
-<<<<<<< Updated upstream
-    margin:1vh 0px 2vh 1vw;
-    width: 46vw;
-    height: 31vh;
-=======
     margin:0vh 4vh 0vh 0vw;
     width: 42vw;
     height: 60vh;
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+
     overflow: hidden;
     flex-direction: row;
     display: flex;
@@ -438,16 +404,9 @@
     }
     .team-box{
         width: 96%;
-<<<<<<< Updated upstream
-        height:30vh;
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-        margin-left: 0%;
-=======
         height:30vh;
         margin-left: 2%;
->>>>>>> Stashed changes
+
         margin-right: 0%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -496,11 +455,7 @@
         -webkit-user-select: none;
         -moz-user-select: none;
     }
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
+
     .home #mobile_bb.block-background{
         padding-top: 4vh;
         padding-bottom: 4vh;
@@ -513,9 +468,6 @@
     }
     .home #mobile_bb.block-background.two_elements{
         height: auto;
-<<<<<<< Updated upstream
-    }
-=======
         padding-bottom: 0vh;
     }
     .home .block-background-split{
@@ -548,9 +500,6 @@
     .home .eight{
         background-color: #B58B8D;
     }
-    
 
->>>>>>> Stashed changes
->>>>>>> Stashed changes
     
 }

@@ -44,10 +44,6 @@ export default class Home extends React.Component {
 
 
   componentDidMount() {
-
-
-
-
     console.log(server)
     axios.get("" + server + "articles/").then((res) => {
       this.setState({ articles: res.data });
@@ -64,30 +60,6 @@ export default class Home extends React.Component {
 
     return (
       <div className="home">
-<<<<<<< Updated upstream
-        <div className="block-background one" id="mobile_bb">
-=======
-<<<<<<< Updated upstream
-        
->>>>>>> Stashed changes
-        <Carousel articles={this.state.articles}/>
-        </div>
-        <div className="block-background two two_elements" id="mobile_bb">
-        <ActionsBox articles={this.state.actions}/>
-        <BlockQuote quote={this.state.quote}/>
-        </div>
-        <div className="block-background three two_elements" id="mobile_bb">
-          <StatisticsBox statistics={this.state.statistics}/>
-          <TeamBox members={this.state.members}/>
-        </div>
-
-        <div className="block-background five two_elements" id="mobile_bb">
-        <StatisticsBox statistics={this.state.statistics}/>
-        <TeamBox members={this.state.members}/>
-<<<<<<< Updated upstream
-        </div>
-=======
-=======
         <div className="block-background one" id="mobile_bb">
           <Carousel articles={this.state.articles} />
         </div>
@@ -115,8 +87,6 @@ export default class Home extends React.Component {
           <BlockQuote quote={this.state.quote} />
           </div>
         </div>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
       </div>
     )
   }
