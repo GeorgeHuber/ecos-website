@@ -13,7 +13,7 @@ export default class Article extends React.Component{
 
     componentDidMount(){
         let id = this.props.match.params.id;
-        axios.get(server+"/articles/get",{params:{id:id}}).then((res)=>{
+        axios.get(server+"articles/get",{params:{id:id}}).then((res)=>{
             this.setState({article:res.data});
             console.log(res.data);
         })

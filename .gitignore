@@ -11,8 +11,6 @@
 # testing
 /coverage
 
-#environment
-/backend/.env
 
 # production
 /build
