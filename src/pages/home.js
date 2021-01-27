@@ -23,48 +23,53 @@ import BlockQuote from "../components/blockQuote.component"
 
 require('dotenv').config()
 
-const server="http://localhost:4000/"
+const server = "http://localhost:4000/"
 
 
 export default class Home extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
-    this.state={
-      articles:[article1,article2,article3],
-      actions:[article1,article2,article3,article1],
-      statistics:[statistic1,statistic2,statistic3,statistic1],
-      members:_members.members,
-      quote:quotes.Home
+    this.state = {
+      articles: [article1, article2, article3],
+      actions: [article1, article2, article3, article1],
+      statistics: [statistic1, statistic2, statistic3, statistic1],
+      members: _members.members,
+      quote: quotes.Home
     }
   }
 
-  
-  
 
 
-  componentDidMount(){
 
-    
-    
-    
+
+  componentDidMount() {
+
+
+
+
     console.log(server)
-    axios.get(""+server+"articles/").then((res)=>{
-        this.setState({articles:res.data});
-        console.log(res.data);
+    axios.get("" + server + "articles/").then((res) => {
+      this.setState({ articles: res.data });
+      console.log(res.data);
     })
-    .catch(err=>console.log(err))
-}
+      .catch(err => console.log(err))
+  }
 
-componentWillUnmount(){
-  window.scrollTo(0, 0);
-}
+  componentWillUnmount() {
+    window.scrollTo(0, 0);
+  }
 
-  render(){
-    
-    return(
+  render() {
+
+    return (
       <div className="home">
+<<<<<<< Updated upstream
         <div className="block-background one" id="mobile_bb">
+=======
+<<<<<<< Updated upstream
+        
+>>>>>>> Stashed changes
         <Carousel articles={this.state.articles}/>
         </div>
         <div className="block-background two two_elements" id="mobile_bb">
@@ -79,7 +84,39 @@ componentWillUnmount(){
         <div className="block-background five two_elements" id="mobile_bb">
         <StatisticsBox statistics={this.state.statistics}/>
         <TeamBox members={this.state.members}/>
+<<<<<<< Updated upstream
         </div>
+=======
+=======
+        <div className="block-background one" id="mobile_bb">
+          <Carousel articles={this.state.articles} />
+        </div>
+        <div className="block-background two two_elements" id="mobile_bb">
+          <ActionsBox articles={this.state.actions} />
+          <div className="block-background-split six">
+            <div className="block-quote" style={{justifyContent:"space-around",display:"flex"}}>
+              <h1 style={{textAlign:"center",fontSize:"4rem",fontWeight:"400",alignSelf:"center",margin:"2vh 2vw 2vh 2vw"}}>
+                Promoting large scale action to combat environmental disaster
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div className="block-background three two_elements" id="mobile_bb">
+          <StatisticsBox statistics={this.state.statistics} />
+          <div className="block-background-split seven">
+          <TeamBox members={this.state.members} />
+          </div>
+        </div>
+
+        <div className="block-background five two_elements" id="mobile_bb">
+          
+          <StatisticsBox statistics={this.state.statistics} />
+          <div className="block-background-split eight">
+          <BlockQuote quote={this.state.quote} />
+          </div>
+        </div>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       </div>
     )
   }
