@@ -15,8 +15,8 @@ export default class ActionsBox extends React.Component{
 
     renderArticle(article){
         return (
-            <div key={article.Id} className="info-box">
-                <div className="preview-img" style={{backgroundImage:`url(${images.unsamples[article.Main_Image]})`}}/>
+            <div key={article._id} className="info-box" onClick={()=>{window.location="/articles/"+article._id}}>
+                <div className="preview-img" style={{backgroundImage:`url(${article.Main_Image})`}}/>
                 <h4 className="info-texts">{article.Title}</h4>
             </div>
         

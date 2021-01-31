@@ -29,8 +29,8 @@ export default class Home extends React.Component {
     super(props);
 
     this.state = {
-      articles: [article1, article2, article3],
-      actions: [article1, article2, article3, article1],
+      articles: [article1],
+      actions: [article1,],
       statistics: [statistic1, statistic2, statistic3, statistic1],
       members: _members.members,
       quote: quotes.Home
@@ -43,13 +43,18 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     
-    axios.get("" + server + "articles/").then((res) => {
+    axios.get("" + server + "articles/carousel").then((res) => {
       this.setState({ articles: res.data });
       console.log(res.data);
     })
       .catch(err => console.log(err))
+  
+    axios.get("" + server + "articles/actions").then((res) => {
+    this.setState({ actions: res.data });
+    console.log(res.data);
+  })
+    .catch(err => console.log(err))
   }
-
   componentWillUnmount() {
     window.scrollTo(0, 0);
   }
