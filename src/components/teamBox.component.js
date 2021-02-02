@@ -21,7 +21,7 @@ export default class TeamBox extends React.Component{
 
     
     render(){
-        const members=this.props.members.slice(0,4);
+        const members=this.props.members;//.slice(0,4);
         
         return(
             <div className="team-box">

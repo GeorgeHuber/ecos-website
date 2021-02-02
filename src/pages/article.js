@@ -3,11 +3,12 @@ import axios from "axios"
 
 import server from "../config.js"
 
+import "../styles/article.css"
 export default class Article extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            article:null
+            article:{}
         }
     }
 
@@ -20,9 +21,18 @@ export default class Article extends React.Component{
         .catch(err=>console.log(err))
     }
     render(){
+        const article=this.state.article;
         return(
-            <div className="articles" style={{whiteSpace:"pre-wrap"}}>
-                {this.state.article?this.state.article.Body:""}
+            <div className="article" style={{whiteSpace:"pre-wrap"}}>
+                <div className="header-image" style={{backgroundImage:"url("+article.Main_Image+")"}}>
+                    <div className="header-text"> 
+                        <h1 className="title">{article.Title}</h1>
+                        <h3 className="author">{article.Author}</h3>
+                    </div> 
+               </div>
+               <div className="article-body">
+                {article.Body?article.Body.replaceAll("\\n","\n"):""}
+                </div>
             </div>
         )
     }

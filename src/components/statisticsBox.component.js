@@ -2,8 +2,6 @@ import React from "react"
 
 import images from "../sample_data/images"
 
-import forest from "../assets/forest.jpg"
-
 
 export default class StatisticsBox extends React.Component{
     constructor(props){
@@ -32,7 +30,7 @@ export default class StatisticsBox extends React.Component{
 
     render(){
         return(
-            <div className="statistics-box" style={{backgroundImage:"url("+forest+")"}}>
+            <div className="statistics-box" >
                 <h1 style={{color:"white",width:"50%",textAlign:"center",borderBottomStyle:"solid",borderBottomColor:"white"}}>Statistics</h1>
                 {this.state.statistics.map((a)=>this.renderStatistic(a))}
             </div>

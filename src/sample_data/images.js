@@ -16,6 +16,7 @@ import _morgan from "../sample_data/images/morgan.jpg"
 
 const images = {
     logo: _logo,
+    
     unsamples: [
         _img0,
     _img1,
