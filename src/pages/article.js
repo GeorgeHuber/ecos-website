@@ -27,7 +27,7 @@ export default class Article extends React.Component{
                 <div className="header-image" style={{backgroundImage:"url("+article.Main_Image+")"}}>
                     <div className="header-text"> 
                         <h1 className="title">{article.Title}</h1>
-                        <h3 className="author">{article.Author}</h3>
+                        <h5 className="author">{article.Author}</h5>
                     </div> 
                </div>
                <div className="article-body">

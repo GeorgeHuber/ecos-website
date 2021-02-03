@@ -30,7 +30,8 @@ export default class News extends React.Component {
                 window.location="articles/"+article._id
             }}>
                 <div className="banner">
-                    <h1>{article.Title}</h1>    
+                    <h1>{article.Title}</h1>   
+                    <h4 className="author">by: {article.Author}</h4> 
                 </div>    
             </div>
         )
@@ -39,7 +40,9 @@ export default class News extends React.Component {
     render(){
         return (
             <div className="news">
+                <div className="article-container">
                 {this.state.articles.map((a)=>this.renderArticle(a))}
+                </div>
             </div>
         )
     }
