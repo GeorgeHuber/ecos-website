@@ -65,7 +65,7 @@ export default class Home extends React.Component {
         .catch(err => console.log(err))
     
     axios.get("" + server + "statistics/").then((res) => {
-      this.setState({ statistics: res.data[0].Statistics});
+      this.setState({ statistics: res.data});
       
       })
       .catch(err => console.log(err))
