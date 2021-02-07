@@ -2,17 +2,6 @@ import React from 'react'
 import axios from 'axios'
 
 
-import article1 from "../sample_data/articles/article1.json"
-import article2 from "../sample_data/articles/article2.json"
-import article3 from "../sample_data/articles/article3.json"
-import statistic1 from "../sample_data/statistics/statistic1.json"
-import statistic2 from "../sample_data/statistics/statistic2.json"
-import statistic3 from "../sample_data/statistics/statistic3.json"
-
-import _members from "../sample_data/members.json"
-
-import quotes from "../sample_data/quotes.json"
-
 import "../styles/home.css"
 
 import Carousel from "../components/carousel.component"
@@ -27,13 +16,21 @@ import server from "../config.js"
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-
+    let article1={
+      "Title":"",
+      "Author":"",
+      "Id":"",
+      "Main_Image":0,
+      "Description":"",
+      "Body":"",
+      "Other_Images":[]
+  }
     this.state = {
       articles: [article1],
-      actions: [article1,],
-      statistics: [statistic1, statistic2, statistic3, statistic1],
-      members: _members.members,
-      quote: quotes.Home
+      actions: [article1],
+      statistics: [],
+      members: [],
+      quote: {}
     }
   }
 
@@ -52,15 +49,36 @@ export default class Home extends React.Component {
     axios.get("" + server + "articles/actions").then((res) => {
     this.setState({ actions: res.data });
     console.log(res.data);
-  })
+    })
     .catch(err => console.log(err))
+    
+    axios.get("" + server + "members/").then((res) => {
+      this.setState({ members: res.data[0].members});
+      
+      })
+      .catch(err => console.log(err))
+  
+    axios.get("" + server + "quotes/").then((res) => {
+        this.setState({ quote: res.data[0].Home});
+        
+        })
+        .catch(err => console.log(err))
+    
+    axios.get("" + server + "statistics/").then((res) => {
+      this.setState({ statistics: res.data[0].Statistics});
+      
+      })
+      .catch(err => console.log(err))
   }
+
+
+
   componentWillUnmount() {
     window.scrollTo(0, 0);
   }
 
   render() {
-
+    
     return (
       <div className="home">
         <div className="block-background one" id="mobile_bb">

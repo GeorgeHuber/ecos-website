@@ -1,6 +1,5 @@
 import React from "react"
 
-import images from "../sample_data/images"
 
 export default class Carousel extends React.Component{
     constructor(props){

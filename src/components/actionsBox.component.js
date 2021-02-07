@@ -1,7 +1,5 @@
 import React from "react"
 
-import images from "../sample_data/images"
-
 export default class ActionsBox extends React.Component{
     constructor(props){
         super(props);

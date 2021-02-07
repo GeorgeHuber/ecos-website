@@ -1,15 +1,11 @@
 import React from "react"
 
-import images from "../sample_data/images"
 
 
 export default class StatisticsBox extends React.Component{
     constructor(props){
         super(props);
         
-        this.state={
-            statistics:props.statistics,
-        }
 
         this.timer=null;
     }
@@ -32,7 +28,7 @@ export default class StatisticsBox extends React.Component{
         return(
             <div className="statistics-box" >
                 <h1 style={{color:"white",width:"50%",textAlign:"center",borderBottomStyle:"solid",borderBottomColor:"white"}}>Statistics</h1>
-                {this.state.statistics.map((a)=>this.renderStatistic(a))}
+                {this.props.statistics.map((a)=>this.renderStatistic(a))}
             </div>
         )
     }
