@@ -77,17 +77,17 @@
 .navbar .navbar-brand{
     display: block;
     padding: 12% 8%;
-    font-family: Raleway;
+    
     font-weight: 800;
     font-size: 4rem;
     text-decoration: none;
     color: black;
 }
 .navbar li a{
-    font-family: Raleway;
+    
     display: block;
     color: #000;
-    padding: 8% 10%;
+    padding: 3vh 10%;
     font-size: 2rem;
     text-decoration: none;
     -webkit-user-select: none;
@@ -138,7 +138,16 @@
     .navbar-top{
       display: flex;
     }
-    .mobile-container{}
+    .navbar li a{
+    
+      display: block;
+      color: #000;
+      padding: 8% 10%;
+      font-size: 2rem;
+      text-decoration: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
     .navbar .title{
       display: none;
     }

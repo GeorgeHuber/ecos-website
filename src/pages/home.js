@@ -95,7 +95,7 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div className="block-background three two_elements" id="mobile_bb">
-          <StatisticsBox statistics={this.state.statistics} />
+          <StatisticsBox statistics={this.state.statistics.slice(0,4)} />
           <div className="block-background-split seven">
           <TeamBox members={this.state.members} />
           </div>
@@ -103,7 +103,7 @@ export default class Home extends React.Component {
 
         <div className="block-background five two_elements" id="mobile_bb">
           
-          <StatisticsBox statistics={this.state.statistics} />
+          <StatisticsBox statistics={this.state.statistics.slice(4,8)} />
           <div className="block-background-split eight">
           <BlockQuote quote={this.state.quote} />
           </div>

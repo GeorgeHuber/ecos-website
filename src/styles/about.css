@@ -1,13 +1,150 @@
 .about{
-    margin: 0px;
+    margin: 0px 0px;
     width:75%;
-    height: 200vh;
     overflow: hidden;
-    margin-top: 0px;
-    background-color: #13547a;
-    background-image: linear-gradient(45deg, #13547a 0%, #80d0c7 100%);
+    
+    
+}
+.about .section{
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
 }
 
+.about .section.one{
+    background-image:  
+            linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 1) 95% ),
+     url("https://i.ibb.co/wYYkf7V/pexels-oliver-sj-str-m-931018.jpg");
+    background-attachment: fixed;
+}
+
+
+.about .big-logo{
+    width: 20vw;
+    height:20vw;
+    display: block;
+    margin-top: 15vh;
+    margin-bottom: 010vh;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+
+
+.about .section.two{
+    height: 200vh;
+    background-color: #88ADE0;
+    background-color: #ADD8E6;
+    background-color: white;
+}
+
+.about .section.three{
+    background-color: #ADD8E6;
+    background-image:linear-gradient( rgba(255, 255, 255, 1),rgba(0, 0, 0, 0.2) 5%), 
+    url("https://img.freepik.com/free-vector/wave-textures-white-background-vector_53876-60286.jpg?size=626&ext=jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    padding-bottom: 4vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    width:100%;
+    padding-left: 3%;
+}
+
+
+.about .card{
+    width:80%;
+    height:80vh;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.about .question{
+    height:12vh;
+    margin-top: 5vh;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+.section.three .question{
+    height:50vh;
+    width:32vw;
+    text-align: center;
+
+}
+
+.section.three .medium{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about .member-group2{
+    background-color:rgba(255, 255, 255, .7);
+    display: flex;
+    flex-direction: column;
+    height:54vh;
+    width:32vw;
+    overflow: hidden;
+    
+
+}
+
+.about .img-box{
+    margin-top: 2vh;
+    height:16vw;
+    width: 16vw;
+    min-width: 8vw;
+    min-height: 8vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .body{
+    height:60vh;
+}
+
+
+.about .big{
+    font-size: 4rem;
+    font-weight: 900;
+    color:black;
+    align-self: center;
+    margin: 0px 5vw;
+    text-align: center;
+}
+
+.about .medium{
+    font-size: 2rem;
+    align-self:flex-start;
+    margin-left: 5%;
+}
+
+.about .gradient-border{
+        border: double 0.5rem transparent;
+        border-radius: 2rem;
+        background-image: linear-gradient(white, white), linear-gradient(to bottom right, #a8c0ff, #3f2b96);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+      
+}
 @media only screen and (max-width: 900px) {
     .about{
         width: 100%;

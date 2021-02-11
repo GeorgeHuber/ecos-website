@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
@@ -6,7 +6,7 @@ import Navbar from "./components/navbar.component"
 import About from "./pages/about";
 import News from "./pages/news";
 import Home from "./pages/home";
-import GetInvolved from "./pages/get-involved";
+//import GetInvolved from "./pages/get-involved";
 import Statistics from './pages/statistics';
 
 import Footer from "./components/footer.component"
@@ -17,6 +17,8 @@ function App() {
     <Router>
           <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Raleway"/>
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Hanalei&family=Open+Sans&display=swap" rel="stylesheet"/>
           <div className="container">
         <Navbar/>
       

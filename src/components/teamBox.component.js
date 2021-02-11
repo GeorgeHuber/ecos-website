@@ -2,11 +2,6 @@ import React from "react"
 
 
 export default class TeamBox extends React.Component{
-    constructor(props){
-        super(props);
-
-    }
-//article.image is temporary and should be replaced in future version
 
     renderMember(m){
         return (
