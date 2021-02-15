@@ -157,17 +157,19 @@
 }
 
 .about .member-group2 .bio{
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
-
+.about .member-group2 h4{
+    margin:0px 0px;
+}
 
 .about .img-box{
     margin-top: 2vh;
     height:16vw;
     width: 16vw;
-    min-width: 8vw;
-    min-height: 8vw;
+    min-width: 16vw;
+    min-height: 16vw;
     background-size: cover;
     background-position: center;
 }
@@ -200,6 +202,29 @@
         background-clip: content-box, border-box;
       
 }
+.about .section.four{
+    background-image: url("https://i.ibb.co/G0wFmJ4/pexels-ruvim-3560044.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.about .section.four .question{
+    width: 92%;
+    border: none;
+}
+.about .section.four .card{
+    max-width:92%;
+}
+.about .section.four h1{
+    padding: 10vh 2vw;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+.about .section.four h1:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    background-color: rgb(200,200,200);
+}
 @media only screen and (max-width: 900px) {
     .about{
         width: 100%;
@@ -218,6 +243,7 @@
         width: 100vw;
         background-image: none;
         background-color: white;
+        padding-bottom: 5vh;
     }
 
     .about .section.two{
@@ -225,6 +251,8 @@
     }
     .about .member-group2{
         width:90%;
+        height: auto;
+        padding-bottom: 2vh;
         margin-left: 0vw;
         margin-right: 0vw;
         
@@ -232,6 +260,8 @@
     .about .member-group2 .img-box{
         width: 40vw;
         height:40vw;
+        min-width: 40vw;
+        min-height: 40vw;
     }
     .about .section.three .question{
         width:90%;
@@ -256,5 +286,18 @@
         object-fit: cover;
         align-self: center;
         
+    }
+    .about .section.four{
+        height: auto;
+        padding-top:4vh;
+        padding-bottom: 4vh;
+    }
+    .about .section.four .card{
+        height: auto;
+        
+    }
+    .about .section.four h1{
+        width: 80%;
+        text-align: center;
     }
 }

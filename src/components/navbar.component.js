@@ -34,9 +34,9 @@ export default class NavBar extends Component {
                         <img className="navbar-logo" alt="" src={logo} onClick={()=>window.location="/"}/>
                         <p className="title">ECOS</p>
                         <div className="social-container">
-                            <img className="instagram" alt="instagram" src={instagram_logo} onClick={()=>window.open("https://www.instagram.com/joebiden/")}/>
-                            <img className="instagram" alt="facebook" src={facebook_logo} onClick={()=>window.open("https://www.instagram.com/joebiden/")}/>
-                            <img className="instagram" alt="twitter" src={twitter_logo} onClick={()=>window.open("https://www.instagram.com/joebiden/")}/>
+                            <img className="instagram" alt="instagram" src={instagram_logo} onClick={()=>window.open("https://www.instagram.com/ecos.lhs/")}/>
+                            <img className="instagram" alt="facebook" src={facebook_logo} onClick={()=>window.open("https://www.instagram.com/ecos.lhs/")}/>
+                            <img className="instagram" alt="twitter" src={twitter_logo} onClick={()=>window.open("https://www.instagram.com/ecos.lhs/")}/>
                         </div>
                     </div>    
                 </div>

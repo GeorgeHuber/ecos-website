@@ -89,13 +89,19 @@ export default class About extends React.Component {
                 <div className="section three">
                     <div className="card question gradient-border">
                         <h2 className="medium" >Our Team</h2>
-
                     </div>
                     {this.state.members.map((a) => this.renderMember(a))}
                 </div>
 
                 <div className="section four">
-
+                    <div className="card question gradient-border">
+                        <h2 className="big" >Take Action</h2>
+                    </div>
+                    <div className="card body-row" style={{ marginBottom: "10vh",justifyContent:"space-around" }}>
+                        <h1>Donate</h1>
+                        <h1>Write a Letter</h1>
+                        <h1>Volunteer</h1>
+                    </div>
                 </div>
             </div>
         )
