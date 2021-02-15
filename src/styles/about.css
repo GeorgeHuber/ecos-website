@@ -42,7 +42,7 @@
 
 
 .about .section.two{
-    height: 200vh;
+    height: 300vh;
     background-color: #88ADE0;
     background-color: #ADD8E6;
     background-color: white;
@@ -50,10 +50,10 @@
 
 .about .section.three{
     background-color: #ADD8E6;
-    background-image:linear-gradient( rgba(255, 255, 255, 1),rgba(0, 0, 0, 0.2) 5%), 
-    url("https://img.freepik.com/free-vector/wave-textures-white-background-vector_53876-60286.jpg?size=626&ext=jpg");
+    background-color: #bfd4db;
+    background-color: white;
     background-size: cover;
-    background-position: center;
+    
     background-attachment: fixed;
     height: auto;
     padding-bottom: 4vh;
@@ -67,7 +67,7 @@
 .about .card{
     width:80%;
     height:80vh;
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     margin-top: 5vh;
@@ -77,6 +77,50 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
+
+.about .card.body{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    height:auto;
+}
+
+.about .card.body h1{
+    font-weight: 100;
+    align-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.about .body-row{
+    width:80%;
+    height:auto;
+    padding: 4vh 4%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.about .body-row.odd p{
+    margin-left: 2%;
+    margin-right: 0vw;
+}
+.about .body-row img{
+    width:20vw;
+    height:20vw;
+    object-fit: cover;
+    
+}
+.about .body-row p{
+    font-size: 1.5rem;
+    margin-right: 2%;
+}
+
 .about .question{
     height:12vh;
     margin-top: 5vh;
@@ -85,7 +129,7 @@
 }
 
 .section.three .question{
-    height:50vh;
+    height:54vh;
     width:32vw;
     text-align: center;
 
@@ -103,9 +147,20 @@
     height:54vh;
     width:32vw;
     overflow: hidden;
-    
-
+    box-shadow: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(100,100,100);
 }
+.about .member-group2:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about .member-group2 .bio{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 
 .about .img-box{
     margin-top: 2vh;
@@ -139,8 +194,8 @@
 
 .about .gradient-border{
         border: double 0.5rem transparent;
-        border-radius: 2rem;
-        background-image: linear-gradient(white, white), linear-gradient(to bottom right, #a8c0ff, #3f2b96);
+        
+        background-image: linear-gradient(white, white), linear-gradient(to bottom right, #a1ffce, #FAFFD1);
         background-origin: border-box;
         background-clip: content-box, border-box;
       
@@ -148,6 +203,58 @@
 @media only screen and (max-width: 900px) {
     .about{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .about .section.one{
+        background-attachment: scroll;
+    }
+    .about .section.three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0vw;
+        width: 100vw;
+        background-image: none;
+        background-color: white;
+    }
+
+    .about .section.two{
+        height: auto;
+    }
+    .about .member-group2{
+        width:90%;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        
+    }
+    .about .member-group2 .img-box{
+        width: 40vw;
+        height:40vw;
+    }
+    .about .section.three .question{
+        width:90%;
+        height: 20vh;
+    }
+    .about .body-row{
+        flex-direction: column-reverse;
+        height:auto;
+        padding: 2vh 2vw;
+        
+        overflow: hidden;
+        
+
+        
+    }
+    .about .body-row.odd{
+        flex-direction: column;
+    }
+    .about .body-row img{
+        width:60vw;
+        height:60vw;
+        object-fit: cover;
+        align-self: center;
         
     }
 }
