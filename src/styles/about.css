@@ -47,7 +47,12 @@
     background-color: #ADD8E6;
     background-color: white;
 }
-
+.about .mountain-background{
+    background-image: url("https://i.ibb.co/MC1KY56/image-from-rawpixel-id-2905608-original-ai-1.png");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .about .section.three{
     background-color: #ADD8E6;
     background-color: #bfd4db;
@@ -59,10 +64,10 @@
     padding-bottom: 4vh;
     display: grid;
     grid-template-columns: auto auto;
-    width:90%;
-    padding-left: 3%;
+    width:80%;
+    padding-left: 10%;
 }
-
+ 
 
 .about .card{
     width:80%;
