@@ -75,6 +75,8 @@ export default class About extends React.Component {
                 <div className="section one transparent" ref={this.vantaRef}>
                     <img className="big-logo" alt="logo" src={logo} />
                     <h2 className="big" >Earth's Climate and Ocean Sustainability</h2>
+                    <br></br>
+                    <h1>&darr;</h1>
                 </div>
                 <div className="section two">
                     <div className="card question gradient-border">

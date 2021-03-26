@@ -13,8 +13,8 @@ import Footer from "./components/footer.component"
 import Article from './pages/article';
 function App() {
   return (
-
-    <Router>
+    <About/>
+    /*<Router>
           <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Raleway"/>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
@@ -29,7 +29,7 @@ function App() {
           <Route path="/statistics" component={Statistics}/>
         </div>
         <Footer/>
-    </Router>
+    </Router>*/
   );
 }
 
