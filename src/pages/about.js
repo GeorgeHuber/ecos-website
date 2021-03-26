@@ -5,6 +5,9 @@ import server from "../config"
 
 import "../styles/about.css"
 
+import * as THREE from 'three'
+import BIRDS from 'vanta/dist/vanta.birds.min'
+
 import logo from "../assets/logos/logo.png"
 export default class About extends React.Component {
     constructor(props) {
@@ -12,6 +15,7 @@ export default class About extends React.Component {
         this.state = {
             members: []
         }
+        this.vantaRef = React.createRef()
     }
 
     componentDidMount() {
@@ -20,10 +24,36 @@ export default class About extends React.Component {
 
         })
             .catch(err => console.log(err))
+
+    
+        //animated background
+        this.vantaEffect = BIRDS({
+            el: this.vantaRef.current,
+            THREE: THREE,
+            backgroundColor: "rgb(255,255,255)",
+            backgroundAlpha: 0,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            birdSize: 0.50,
+            wingSpan: 36.00,
+            speedLimit: 3.00,
+            separation: 72.00,
+            alignment: 1.00,
+            cohesion: 100.00,
+            quantity: 4
+          })
     }
 
     componentWillUnmount() {
         window.scrollTo(0, 0);
+        if (this.vantaEffect) {
+            this.vantaEffect.destroy()
+          }
     }
 
 
@@ -41,11 +71,10 @@ export default class About extends React.Component {
     render() {
         return (
             <div className="about">
-                <div className="section one">
-
+                {/*<div className="birds" ref={this.vantaRef}></div>*/}
+                <div className="section one transparent" ref={this.vantaRef}>
                     <img className="big-logo" alt="logo" src={logo} />
                     <h2 className="big" >Earth's Climate and Ocean Sustainability</h2>
-
                 </div>
                 <div className="section two">
                     <div className="card question gradient-border">
