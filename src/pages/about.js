@@ -39,13 +39,13 @@ export default class About extends React.Component {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            birdSize: 0.50,
+            birdSize: 1.50,
             wingSpan: 36.00,
             speedLimit: 3.00,
             separation: 72.00,
             alignment: 1.00,
             cohesion: 100.00,
-            quantity: 4
+            quantity: 3
           })
     }
 
@@ -74,7 +74,7 @@ export default class About extends React.Component {
                 {/*<div className="birds" ref={this.vantaRef}></div>*/}
                 <div className="section one transparent" ref={this.vantaRef}>
                     <img className="big-logo" alt="logo" src={logo} />
-                    <h2 className="big" >Earth's Climate and Ocean Sustainability</h2>
+                    <h2 className="big" ><a>E</a>arth's <a>C</a>limate and <a>O</a>cean <a>S</a>ustainability</h2>
                     <br></br>
                     <h1>&darr;</h1>
                 </div>
