@@ -2,7 +2,7 @@
     margin: 0px 0px;
     width:100%;
     overflow: hidden;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 .about .section{
@@ -11,19 +11,92 @@
     flex-direction: column;
     align-items: center;
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-size: cover;
     background-position: center;
 
 }
 
-.about .section.one{
-    background-image:  
-            linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 1) 95% ),
-     url("https://i.ibb.co/wYYkf7V/pexels-oliver-sj-str-m-931018.jpg");
-    background-attachment: fixed;
+.about .section.two-and-a-half{
+    background-color: #add8e691;
+    background-color: transparent;
+    padding-bottom: 10%;
+    
+
+}
+.about .section.two-and-a-half .question{
+    z-index: 100;
+}
+.about .involved-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    width:60vw;
+    z-index: 100;
+}
+.about .involved-grid a{
+    text-decoration: underline;
+    color: rgb(0, 12, 142);
+
+}
+.about .involved-grid .instagram{
+    width: 15vw;
+    height :15vw;
+    justify-self:center;  
+}
+.about .involved-grid .instagram:hover{
+    cursor: pointer;
+    width: 17vw;
+    height :17vw;
+
+}
+.about .card.involved{
+    height:auto;
+    padding: 2vh;
+    justify-content: space-around;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width:25vw;
+    height:25vw;
+    
+}
+.about .section.two-and-a-half .ocean-background{
+    position: absolute;
+    width: 100vw;
+    height:calc(50vw + 50vh);
+    flex-grow: 1;
+    z-index: 0;
+    border:none;
+
+}
+.about .card.involved h1{
+    color:black;
+    font-weight: 900;
+    text-shadow: 1px 0 #888888;
+    font-size: 2.5rem;
 }
 
+.about .sign-up-form{
+    margin:0;
+    flex-direction: column;
+    display: flex;
+}
+.about .sign-up-form input{
+    padding:2vh 2vw;
+    width: 80%;
+    height:80%
+}
+.about .sign-up-form button{
+    padding:2vh 2vw;
+    background-color: white;
+}
+.about .sign-up-form button:hover{
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-style: solid;
+    cursor: pointer;
+}
 
 .about .big-logo{
     width: 20vw;
@@ -42,7 +115,7 @@
 
 
 .about .section.two{
-    height: 300vh;
+    height: auto;
     background-color: #88ADE0;
     background-color: #ADD8E6;
     background-color: white;
@@ -58,13 +131,13 @@
     background-color: #bfd4db;
     background-color: white;
     background-size: cover;
-    
+    margin-top: 14vh;
     background-attachment: fixed;
     height: auto;
     padding-bottom: 4vh;
     display: grid;
     grid-template-columns: auto auto;
-    width:80%;
+    width:84%;
     padding-left: 10%;
 }
  
@@ -108,7 +181,8 @@
     justify-content: space-between;
     margin-top: 5vh;
     flex-direction: row;
-    overflow: hidden;
+    
+    
 }
 
 .about .body-row.odd p{
@@ -119,7 +193,8 @@
     width:20vw;
     height:20vw;
     object-fit: cover;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2px;
 }
 .about .body-row p{
     font-size: 1.5rem;
@@ -135,14 +210,17 @@
 
 .section.three .question{
     height:54vh;
-    width:32vw;
-    text-align: center;
-
+    width:38vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section.three .medium{
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
+    align-self: center;
+    margin-left: 0;
 }
 
 .about .member-group2{
@@ -150,12 +228,11 @@
     display: flex;
     flex-direction: column;
     height:54vh;
-    width:32vw;
+    width:38vw;
     overflow: hidden;
     box-shadow: none;
     border-style: solid;
-    border-width: 1px;
-    border-color: rgb(100,100,100);
+    
 }
 .about .member-group2:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -275,6 +352,21 @@
         margin-left: 0vw;
         margin-right: 0vw;
         
+    }
+    .about .involved-grid{
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        z-index: 100;
+        align-items: center;
+    }
+    .about .card.involved{
+        width:70vw;
+        height:auto;
+        
+    }
+    .about .section.two-and-a-half .ocean-background{
+        height: 150vh;
     }
     .about .member-group2 .img-box{
         width: 40vw;

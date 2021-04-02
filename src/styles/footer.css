@@ -1,6 +1,6 @@
 .footer{
     height:8vh;
-    width:75vw;
+    width:100%;
     
     background-color: white;
     justify-content: space-around;
@@ -8,8 +8,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-top-style: solid;
-    border-top-width:.1rem ;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .footer h2{
     color:black;
