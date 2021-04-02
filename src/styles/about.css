@@ -368,6 +368,16 @@
     .about .section.two-and-a-half .ocean-background{
         height: 150vh;
     }
+    .about .section.two-and-a-half input{
+        width:66vw;
+        height:4vh;
+        font-size: 1.2rem;
+    }
+    .about .section.two-and-a-half button{
+        width:70vw;
+        height:10vh;
+        font-size: 1.4rem;
+    }
     .about .member-group2 .img-box{
         width: 40vw;
         height:40vw;
