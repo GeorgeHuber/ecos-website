@@ -1,16 +1,16 @@
 
 import './App.css';
-import {BrowserRouter as Router, Route} from "react-router-dom";
+//import {BrowserRouter as Router, Route} from "react-router-dom";
 
-import Navbar from "./components/navbar.component"
+//import Navbar from "./components/navbar.component"
 import About from "./pages/about";
-import News from "./pages/news";
-import Home from "./pages/home";
+//import News from "./pages/news";
+//import Home from "./pages/home";
 //import GetInvolved from "./pages/get-involved";
-import Statistics from './pages/statistics';
+//import Statistics from './pages/statistics';
 
 import Footer from "./components/footer.component"
-import Article from './pages/article';
+//import Article from './pages/article';
 function App() {
   return (
     <div>
