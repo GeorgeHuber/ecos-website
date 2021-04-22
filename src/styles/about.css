@@ -321,14 +321,15 @@
     z-index: -1;
 }
 .about .bottom-row{
-    width:88%;
+    width:100%;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-bottom: 10vh;
     align-self: center;
-    margin-left: 6%;
+    
+    background-image :linear-gradient(white,#ADD8E6);
 }
 .about .bottom-row .instagram{
     width:20vh;
@@ -336,7 +337,7 @@
 }
 .about .bottom-row .card1{
     width:50%;
-    background-color: rgba(164, 255, 250, 0.466);
+    
 }
 
 .about .bottom-row .card1 h1{
