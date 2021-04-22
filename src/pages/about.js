@@ -258,7 +258,7 @@ export default class About extends React.Component {
                         </p>
                     </div>
                 </div>
-
+{/*
                 <div className="section three">
                     <ScrollAnimation animateOnce={true} className="card question gradient-border" animateIn="animate__fadeInLeft" initiallyVisible={false} duration={1}>
                         <h2 className="medium" >Our Team</h2>
@@ -266,7 +266,7 @@ export default class About extends React.Component {
                     {this.state.members.map((a) => this.renderMember(a))}
                 </div>
 
-                {/*<div className="section four">
+                <div className="section four">
                     <div className="card question gradient-border">
                         <h2 className="big" >Take Action</h2>
                     </div>
@@ -276,6 +276,16 @@ export default class About extends React.Component {
                         <h1>Volunteer</h1>
                     </div>
                 </div>*/}
+                <div className="bottom-row">
+                       <div className="card involved">
+                        <ScrollAnimation animateIn="animate__wobble" initiallyVisible={true} duration={2}>
+                                <img className="instagram" alt="instagram" src={instagram_logo} onClick={() => window.open("https://www.instagram.com/ecos.lhs/")} />
+                        </ScrollAnimation>
+                        </div>
+                        <div className="card involved card1">
+                        <h1>Follow our insta and be part of the movement!</h1>
+                    </div>
+                    </div>
             </div>
         )
     }

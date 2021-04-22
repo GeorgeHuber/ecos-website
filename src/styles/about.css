@@ -63,7 +63,7 @@
 }
 .about .section.two-and-a-half .ocean-background{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height:calc(50vw + 50vh);
     flex-grow: 1;
     z-index: 0;
@@ -320,7 +320,29 @@
     top:0;
     z-index: -1;
 }
+.about .bottom-row{
+    width:88%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    align-self: center;
+    margin-left: 6%;
+}
+.about .bottom-row .instagram{
+    width:20vh;
+    height:20vh;
+}
+.about .bottom-row .card1{
+    width:50%;
+    background-color: rgba(164, 255, 250, 0.466);
+}
 
+.about .bottom-row .card1 h1{
+    font-size: 3rem;
+    padding:2vw
+}
 @media only screen and (max-width: 900px) {
     .about{
         width: 100%;
@@ -430,5 +452,28 @@
     .about .big a{
         color:black;
         font-weight: 900;
+    }
+    .about .bottom-row{
+        width:100%;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        align-self: center;
+        margin-left: 0%;
+        align-items: center;
+    }
+    .about .bottom-row .instagram{
+        width:20vh;
+        height:20vh;
+    }
+    .about .bottom-row .card1{
+        width:74%
+    }
+    
+    .about .bottom-row .card1 h1{
+        font-size: 3rem;
+        padding:2vw
     }
 }
