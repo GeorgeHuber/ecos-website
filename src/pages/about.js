@@ -164,7 +164,7 @@ export default class About extends React.Component {
                         <h2 className="medium" >Who Are We?</h2>
                     </ScrollAnimation>
                     <div className="card body" style={{ marginBottom: "10vh" }}>
-                        <h1>ECOS is an growing organization started by students at Libertyville High School in 2021 dedicated to remedying climate change</h1>
+                        <h1>ECOS is an growing organization started by students at Libertyville High School in 2020 dedicated to remedying climate change</h1>
                     </div>
 
                     <ScrollAnimation animateOnce={true} className="card question gradient-border" animateIn="animate__fadeInLeft" initiallyVisible={false} duration={1}>
